@@ -1,0 +1,177 @@
+================================================================================
+RELATORIO DE CLUSTERIZACAO - V2
+================================================================================
+
+Features usadas: Value_Num, fb_Mn/MP
+Total de jogadores: 285
+Numero otimo de clusters: 3
+Data: 2025-09-25 13:23:29
+
+Métricas (k otimo)
+- Silhouette: 0.4465
+- Calinski-Harabasz: 287.19
+- Davies-Bouldin: 0.7604
+- SSE: 188
+
+Distribuicao dos clusters
+Cluster 0: 65 jogadores (22.8%)
+Cluster 1: 124 jogadores (43.5%)
+Cluster 2: 96 jogadores (33.7%)
+
+Jogadores por cluster (primeiros 50)
+
+Cluster 0:
+- Lyanco
+- Guilherme Arana
+- Natanael
+- Alexsander
+- Fausto Vera
+- Gabriel Menino
+- Gustavo Scarpa
+- Rony
+- Santiago Ramos Mingo
+- Luciano Juba
+- Caio Alexandre
+- Erick
+- Jean Lucas
+- Erick Pulga
+- Alexander Barboza
+- Cuiabano
+- Alex Telles
+- Vitinho
+- Marlon Freitas
+- Jefferson Savarino
+- Matheus Martins
+- Artur
+- Nathan Fernandes
+- Arthur Cabral
+- Juninho Capixaba
+- Eric Ramires
+- Lucas Barbosa
+- Isidro Pitta
+- Hugo Souza
+- Matheuzinho
+- Raniele
+- Christian
+- Matheus Henrique
+- Wanderson
+- Kaio Jorge
+- Gabriel Barbosa
+- Agustín Rossi
+- Léo Pereira
+- Ayrton Lucas
+- Jorginho
+- Erick Pulgar
+- Jorge Carrascal
+- Michael
+- Gonzalo Plata
+- Luiz Araújo
+- Luciano Acosta
+- Yeferson Soteldo
+- Eros Mancuso
+- Franco Cristaldo
+- Miguel Monsalve
+
+Cluster 1:
+- Everson
+- Júnior Alonso
+- Alan Franco
+- Dudu
+- Hulk
+- David Duarte
+- Gilberto
+- Everton Ribeiro
+- Neto
+- Newton
+- Álvaro Montoro
+- Pedro Henrique
+- Vanderlan
+- Gabriel
+- Eduardo Sasha
+- Fernando Miguel
+- Willian Machado
+- Éder
+- Richardson
+- Lucas Mugni
+- Pedro Henrique
+- André Ramalho
+- Gustavo Henrique
+- Matheus Bidu
+- Fabrizio Angileri
+- André Carrillo
+- Rodrigo Garro
+- Yuri Alberto
+- Lucas Villalba
+- Lucas Romero
+- Lucas Silva
+- Matheus Pereira
+- Léo Ortiz
+- Danilo
+- Alex Sandro
+- Guillermo Varela
+- Nicolás de la Cruz
+- Giorgian de Arrascaeta
+- Samuel Lino
+- Bruno Henrique
+- Thiago Silva
+- Manoel
+- Gabriel Fuentes
+- Guga
+- Samuel Xavier
+- Facundo Bernal
+- Germán Cano
+- Brenno
+- Helton Leite
+- Benjamín Kuscevic
+
+Cluster 2:
+- Renzo Saravia
+- Igor Gomes
+- Reinier
+- Bernard
+- Júnior Santos
+- Kanu
+- Iago
+- Santiago Arias
+- Nicolás Acevedo
+- Michel Araújo
+- Willian José
+- Mateo Ponte
+- Danilo
+- Allan
+- Jordan Barrera
+- Kauan Lindes
+- Jeffinho
+- Joaquín Correa
+- Agustín Sant'Anna
+- Nathan Mendes
+- Fabinho
+- Matheus Fernandes
+- Henry Mosquera
+- Ignacio Laquintana
+- Thiago Borbas
+- Rafael Ramos
+- Lucas Lima
+- Matheus Araújo
+- Fernandinho
+- Aylon
+- Hugo
+- Vitinho
+- Ángel Romero
+- Walace
+- Yannick Bolasie
+- Marquinhos
+- Allan
+- Pedro
+- Juninho
+- Lima
+- Ganso
+- Keno
+- Santiago Moreno
+- Kevin Serna
+- Rodrigo Santos
+- Pablo Roberto
+- Kervin Andrade
+- Moisés
+- José Herrera
+- Yago Pikachu

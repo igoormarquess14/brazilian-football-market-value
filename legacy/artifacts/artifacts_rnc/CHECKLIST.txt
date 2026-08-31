@@ -1,0 +1,6 @@
+- Baseline A (com pts_rnc) estimado; HC1 cluster Clube reportado
+- Diagnósticos (VIF, RESET, BP, White, JB, influentes) salvos
+- Baselines B (−log rank), C (decis), D (troca de uso), E (trimming) estimados
+- metrics_models.csv salvo com RMSE/MAE (in e 5-fold CV) para todas as especificações
+- Turning point de idade calculado e verificado (arquivo age_turning_point.txt)
+- Quadro comparativo de exposição (A vs B vs C) gerado

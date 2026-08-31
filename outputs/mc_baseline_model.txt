@@ -1,0 +1,48 @@
+Estimated N: 87 | Thesis N: 87
+N identical: OK
+
+Variable          Python coef.   Table 7 coef.  Rel. error    Python SE    Table 7 SE  Rel. error
+const               14.3035154      14.3035000    1.08e-06    0.3367609     0.3367610    1.83e-07
+age_centered        -0.0875236      -0.0875236    3.92e-07    0.0244138     0.0244138    1.55e-06
+age_sq              -0.0126963      -0.0126963    3.77e-06    0.0045639     0.0045639    1.26e-07
+fb_xG+/-             0.0406437       0.0406437    2.83e-07    0.0197692     0.0197692    1.77e-06
+fb_Mn/MP             0.0065970       0.0065970    3.29e-07    0.0052721     0.0052721    9.37e-07
+
+Python R2: 0.226538 | Thesis R2: 0.226538 | OK
+Python adjusted R2: 0.188808 | Thesis adjusted R2: 0.188808 | OK
+Python F: 6.004195 | Thesis F: 6.004195
+Python p(F): 0.000274 | Thesis p(F): 0.000274
+
+REPRODUCTION: OK — within CLAUDE.md tolerance
+
+==============================================================================
+Full statsmodels output:
+==============================================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           ln_Value_Num   R-squared:                       0.227
+Model:                            OLS   Adj. R-squared:                  0.189
+Method:                 Least Squares   F-statistic:                     6.004
+Date:                Mon, 31 Aug 2026   Prob (F-statistic):           0.000274
+Time:                        18:26:17   Log-Likelihood:                -106.40
+No. Observations:                  87   AIC:                             222.8
+Df Residuals:                      82   BIC:                             235.1
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+const           14.3035      0.337     42.474      0.000      13.634      14.973
+age_centered    -0.0875      0.024     -3.585      0.001      -0.136      -0.039
+age_sq          -0.0127      0.005     -2.782      0.007      -0.022      -0.004
+fb_xG+/-         0.0406      0.020      2.056      0.043       0.001       0.080
+fb_Mn/MP         0.0066      0.005      1.251      0.214      -0.004       0.017
+==============================================================================
+Omnibus:                        3.395   Durbin-Watson:                   1.780
+Prob(Omnibus):                  0.183   Jarque-Bera (JB):                3.382
+Skew:                          -0.457   Prob(JB):                        0.184
+Kurtosis:                       2.689   Cond. No.                         236.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

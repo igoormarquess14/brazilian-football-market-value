@@ -1,0 +1,83 @@
+=== RESULTADOS DA CLUSTERIZAÇÃO ===
+
+Data: 2025-10-01 20:57:05
+Dataset: C:\Users\IGOR\Desktop\UFSC\TCC\dados\clubes\outcome\df_final.csv
+Variáveis utilizadas: ln_Value_Num, pos_rnc
+
+=== ANÁLISE DE K ÓTIMO ===
+k	Inércia	Silhouette
+------------------------------
+2	314.34	0.402
+3	191.61	0.430
+4	144.58	0.410
+5	115.52	0.392
+6	94.96	0.403
+7	78.00	0.409
+8	67.31	0.399
+9	59.19	0.409
+10	53.02	0.404
+11	47.96	0.402
+12	41.80	0.421
+
+K ótimo selecionado: 3
+Silhouette score médio: 0.430
+
+=== CENTRÓIDES (Z-SCORE) ===
+           ln_Value_Num   pos_rnc
+Cluster 0     -1.243281  0.100009
+Cluster 1      0.189253  1.147296
+Cluster 2      0.654389 -0.853061
+
+=== DISTRIBUIÇÃO DOS CLUSTERS ===
+Cluster	Tamanho	Percentual
+-----------------------------------
+0	77	27.2%
+1	84	29.7%
+2	122	43.1%
+
+Total de registros: 283
+
+=== PCA - VARIÂNCIA EXPLICADA ===
+PC1: 61.3%
+PC2: 38.7%
+Total: 100.0%
+
+=== INTERPRETAÇÃO DOS CLUSTERS ===
+Baseado nos centróides em z-score:
+
+Cluster 0:
+  - ln_Value_Num: Baixo (z=-1.24)
+  - pos_rnc: Médio (z=0.10)
+
+Cluster 1:
+  - ln_Value_Num: Médio (z=0.19)
+  - pos_rnc: Alto (z=1.15)
+
+Cluster 2:
+  - ln_Value_Num: Alto (z=0.65)
+  - pos_rnc: Baixo (z=-0.85)
+
+
+Visualizações:
+1. elbow_and_silhouette_plots.png - Gráficos de Elbow (SSE/inércia vs k) e Silhouette médio vs k (k=2..12)
+2. detailed_silhouette_plot.png - Silhouette plot detalhado para k=3 escolhido
+3. pca_scatter_plot.png - Scatter plot 2D com PCA colorido pelos clusters
+4. centroids_heatmap.png - Heatmap dos centróides em z-score
+5. cluster_sizes_bar_chart.png - Bar chart com tamanho dos clusters
+6. boxplots_by_cluster.png - Boxplots por variável × cluster
+7. centroids_dendrogram.png - Dendrograma dos centróides (hierárquico sobre K-means)
+
+Arquivos de dados:
+clustering_results.txt - Resultados detalhados dos cálculos
+cluster_0.0.csv - 77 registros
+cluster_1.0.csv - 84 registros
+cluster_2.0.csv - 122 registros
+df_final_with_clusters.csv - Dataset completo com clusters
+
+Resultados da clusterização:
+K ótimo: 3 clusters
+Silhouette: 0.430 (boa separação)
+Distribuição: 77, 84, 122 registros (todos ≥40)
+Método: K-means com distância euclidiana
+Parâmetros: ln_Value_Num e pos_rnc
+

@@ -1,0 +1,13 @@
+# Registro (log) iniciado em 2025-10-16 17:56
+# Gravação de sessão de comandos (note que, provavelmente, este registro
+# precisará ser editado para ser usado como um script).
+open C:\Users\IGOR\Desktop\UFSC\TCC\dados\df_mc.csv
+# modelo 1
+ols ln_Value_Num 0 age_centered age_sq fb_xG fb_MnMP
+modtest --squares
+reset --squares-only
+modtest --white
+chow 44
+modtest --normality
+vif
+bkw

@@ -1,0 +1,80 @@
+RELATÓRIO CONSOLIDADO - MODELOS POR POSIÇÃO
+============================================================
+
+Modelos estimados separadamente para cada posição:
+- Modelo_GK: apenas goleiros (DUM_GK=1)
+- Modelo_DEF: apenas defensores (DUM_DEF=1)
+- Modelo_MC: apenas meio-campistas (DUM_MC=1)
+- Modelo_ATA: apenas atacantes (DUM_ATA=1)
+
+Especificação comum: ln_Value_Num ~ age_centered + age_sq + fb_Mn/MP + fb_xG + pts_rnc
+Inferência: EP robustos HC1 clusterizados por Clube
+
+=== Modelo_ATA ===
+Especificação: Modelo_ATA
+Coeficientes (HC1 cluster por Clube): coef | se | t | p
+  Intercept: 12.8937 | 0.6511 | 19.8039 | 2.76e-87
+  age_centered: -0.1127 | 0.0195 | -5.7843 | 7.28e-09
+  age_sq: -0.0082 | 0.0031 | -2.6231 | 0.0087
+  fb_MnMP: 0.0121 | 0.0035 | 3.4258 | 6.13e-04
+  fb_xG: 0.0164 | 0.0294 | 0.5585 | 0.5765
+  pts_rnc: 0.1030 | 0.0482 | 2.1374 | 0.0326
+N=91, R2=0.4884, R2_adj=0.4583
+RMSE_in=0.7067, MAE_in=0.5820, RMSE_cv5=0.7817, MAE_cv5=0.6339
+Testes diagnósticos (p-valores):
+  Não-linearidade (quadrados): NA
+  RESET: NA
+  White: 0.0520
+  Jarque–Bera: 0.2642
+
+=== Modelo_DEF ===
+Especificação: Modelo_DEF
+Coeficientes (HC1 cluster por Clube): coef | se | t | p
+  Intercept: 12.9652 | 0.3318 | 39.0775 | 0.00e+00
+  age_centered: -0.1494 | 0.0117 | -12.7325 | 3.90e-37
+  age_sq: -0.0056 | 0.0039 | -1.4314 | 0.1523
+  fb_MnMP: 0.0009 | 0.0030 | 0.3131 | 0.7542
+  fb_xG: 0.0389 | 0.0203 | 1.9194 | 0.0549
+  pts_rnc: 0.1200 | 0.0232 | 5.1646 | 2.41e-07
+N=91, R2=0.5776, R2_adj=0.5527
+RMSE_in=0.6828, MAE_in=0.5882, RMSE_cv5=0.7532, MAE_cv5=0.6448
+Testes diagnósticos (p-valores):
+  Não-linearidade (quadrados): NA
+  RESET: NA
+  White: 0.3503
+  Jarque–Bera: 0.1951
+
+=== Modelo_GK ===
+Especificação: Modelo_GK
+Coeficientes (HC1 cluster por Clube): coef | se | t | p
+  Intercept: 11.9206 | 1.2219 | 9.7554 | 1.75e-22
+  age_centered: -0.0767 | 0.1286 | -0.5961 | 0.5511
+  age_sq: -0.0223 | 0.0144 | -1.5464 | 0.1220
+  fb_MnMP: 0.0207 | 0.0204 | 1.0187 | 0.3084
+  fb_xG: 0.0106 | 0.0349 | 0.3041 | 0.7610
+  pts_rnc: 0.1075 | 0.0749 | 1.4349 | 0.1513
+N=14, R2=0.7495, R2_adj=0.5929
+RMSE_in=0.7259, MAE_in=0.6075, RMSE_cv5=2.4015, MAE_cv5=1.6940
+Testes diagnósticos (p-valores):
+  Não-linearidade (quadrados): NA
+  RESET: NA
+  White: 0.3738
+  Jarque–Bera: 0.6268
+  Nota: N pequeno (14 observações)
+
+=== Modelo_MC ===
+Especificação: Modelo_MC
+Coeficientes (HC1 cluster por Clube): coef | se | t | p
+  Intercept: 13.2687 | 0.7130 | 18.6100 | 2.67e-77
+  age_centered: -0.0955 | 0.0205 | -4.6660 | 3.07e-06
+  age_sq: -0.0127 | 0.0024 | -5.2924 | 1.21e-07
+  fb_MnMP: 0.0072 | 0.0063 | 1.1355 | 0.2562
+  fb_xG: 0.0215 | 0.0125 | 1.7243 | 0.0846
+  pts_rnc: 0.0873 | 0.0320 | 2.7289 | 0.0064
+N=87, R2=0.2939, R2_adj=0.2503
+RMSE_in=0.7855, MAE_in=0.6545, RMSE_cv5=0.8544, MAE_cv5=0.7111
+Testes diagnósticos (p-valores):
+  Não-linearidade (quadrados): NA
+  RESET: NA
+  White: 0.5925
+  Jarque–Bera: 0.2169

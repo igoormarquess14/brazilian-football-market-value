@@ -1,0 +1,95 @@
+RELATÓRIO CONSOLIDADO - MODELOS POR POSIÇÃO
+
+Modelos estimados separadamente para cada posição:
+- Modelo_GK: apenas goleiros (DUM_GK=1)
+- Modelo_DEF: apenas defensores (DUM_DEF=1)
+- Modelo_MC: apenas meio-campistas (DUM_MC=1)
+- Modelo_ATA: apenas atacantes (DUM_ATA=1)
+
+Especificação comum: ln_Value_Num ~ age_centered + age_sq + fb_Mn/MP + fb_xG + pts_rnc
+Inferência: EP robustos HC1 clusterizados por Clube
+
+
+=== Modelo_DEF ===
+Especificação: Modelo_DEF
+Coeficientes (HC1 cluster por Clube): coef | se | t | p
+  Intercept: 12.9610 | 0.4438 | 29.2018 | 4.39e-46
+  age_centered: -0.1497 | 0.0191 | -7.8488 | 1.14e-11
+  age_sq: -0.0056 | 0.0037 | -1.5190 | 0.1325
+  fb_xGpm: 0.0389 | 0.0173 | 2.2518 | 0.0269
+  fb_MnMP: 0.0009 | 0.0039 | 0.2419 | 0.8094
+  pts_rnc: 0.0001 | 2.71e-05 | 4.4247 | 2.85e-05
+N=91, R2=0.5776, R2_adj=0.5527
+RMSE_in=0.6828, MAE_in=0.5882, RMSE_cv5=0.7489, MAE_cv5=0.6448
+Testes diagnósticos (p-valores):
+  RESET: 0.0895
+  Breusch–Pagan: 0.3452
+  White: 0.3503
+  Jarque–Bera: 0.1951
+
+=== Modelo_MC ===
+Especificação: Modelo_MC
+Coeficientes (HC1 cluster por Clube): coef | se | t | p
+  Intercept: 13.2660 | 0.4824 | 27.5002 | 7.69e-43
+  age_centered: -0.0963 | 0.0248 | -3.8746 | 0.0002
+  age_sq: -0.0127 | 0.0044 | -2.8949 | 0.0049
+  fb_xGpm: 0.0215 | 0.0202 | 1.0622 | 0.2913
+  fb_MnMP: 0.0072 | 0.0051 | 1.4111 | 0.1620
+  pts_rnc: 8.73e-05 | 3.14e-05 | 2.7789 | 0.0068
+N=87, R2=0.2939, R2_adj=0.2503
+RMSE_in=0.7855, MAE_in=0.6545, RMSE_cv5=0.8364, MAE_cv5=0.7111
+Testes diagnósticos (p-valores):
+  RESET: 0.0307
+  Breusch–Pagan: 0.5863
+  White: 0.5925
+  Jarque–Bera: 0.2169
+
+=== Modelo_ATA ===
+Especificação: Modelo_ATA
+Coeficientes (HC1 cluster por Clube): coef | se | t | p
+  Intercept: 12.8905 | 0.3444 | 37.4319 | 1.37e-54
+  age_centered: -0.1132 | 0.0176 | -6.4147 | 7.63e-09
+  age_sq: -0.0082 | 0.0037 | -2.2303 | 0.0284
+  fb_xGpm: 0.0164 | 0.0200 | 0.8189 | 0.4151
+  fb_MnMP: 0.0121 | 0.0038 | 3.1826 | 0.0020
+  pts_rnc: 0.0001 | 2.76e-05 | 3.7364 | 0.0003
+N=91, R2=0.4884, R2_adj=0.4583
+RMSE_in=0.7067, MAE_in=0.5820, RMSE_cv5=0.7734, MAE_cv5=0.6339
+Testes diagnósticos (p-valores):
+  RESET: 0.0158
+  Breusch–Pagan: 0.0585
+  White: 0.0520
+  Jarque–Bera: 0.2642
+
+=== Modelo_GK ===
+Especificação: Modelo_GK
+Coeficientes (HC1 cluster por Clube): coef | se | t | p
+  Intercept: 11.9184 | 2.0532 | 5.8048 | 0.0004
+  age_centered: -0.0779 | 0.1281 | -0.6081 | 0.5600
+  age_sq: -0.0223 | 0.0155 | -1.4401 | 0.1878
+  fb_xGpm: 0.0106 | 0.0601 | 0.1767 | 0.8642
+  fb_MnMP: 0.0207 | 0.0243 | 0.8541 | 0.4179
+  pts_rnc: 0.0001 | 8.21e-05 | 1.3083 | 0.2271
+N=14, R2=0.7495, R2_adj=0.5929 (N pequeno)
+RMSE_in=0.7259, MAE_in=0.6075, RMSE_cv5=1.9806, MAE_cv5=1.6940
+Testes diagnósticos (p-valores):
+  RESET: 0.1733
+  Breusch–Pagan: 0.2813
+  White: 0.3738
+  Jarque–Bera: 0.6268
+
+Inferência com EP HC1 cluster por Clube.
+
+Checklist:
+
+ Tratamentos aplicados (age_centered, age_sq, ln_Value_Num)
+
+ Modelos por posição estimados com HC1 cluster por Clube
+
+ metrics_pos.csv salvo
+
+ Diagnósticos e VIF salvos para DEF/MC/ATA (e GK se existir)
+
+ Gráficos salvos
+
+ RELATORIO_MODELOS_POR_POSICAO.txt e .pdf gerados em ./artifacts_final/

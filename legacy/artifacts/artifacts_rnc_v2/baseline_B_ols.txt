@@ -1,0 +1,32 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           ln_Value_Num   R-squared:                       0.432
+Model:                            OLS   Adj. R-squared:                  0.415
+Method:                 Least Squares   F-statistic:                     26.02
+Date:                Thu, 02 Oct 2025   Prob (F-statistic):           8.83e-30
+Time:                        15:17:36   Log-Likelihood:                -330.97
+No. Observations:                 283   AIC:                             679.9
+Df Residuals:                     274   BIC:                             712.8
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept       14.5201      0.333     43.573      0.000      13.864      15.176
+age_centered    -0.1125      0.012     -9.707      0.000      -0.135      -0.090
+age_sq          -0.0118      0.002     -5.493      0.000      -0.016      -0.008
+fb_xGpm          0.0462      0.010      4.444      0.000       0.026       0.067
+fb_MnMP          0.0073      0.002      2.911      0.004       0.002       0.012
+Dum_DEF         -0.0543      0.236     -0.230      0.818      -0.518       0.410
+Dum_MC           0.1649      0.243      0.678      0.498      -0.314       0.644
+Dum_ATA          0.3128      0.248      1.261      0.208      -0.175       0.801
+neglog_rank      0.2564      0.058      4.412      0.000       0.142       0.371
+==============================================================================
+Omnibus:                        8.181   Durbin-Watson:                   1.659
+Prob(Omnibus):                  0.017   Jarque-Bera (JB):                8.057
+Skew:                          -0.399   Prob(JB):                       0.0178
+Kurtosis:                       3.213   Cond. No.                         710.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

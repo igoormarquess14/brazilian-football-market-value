@@ -1,0 +1,36 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           ln_Value_Num   R-squared:                       0.453
+Model:                            OLS   Adj. R-squared:                  0.433
+Method:                 Least Squares   F-statistic:                     142.6
+Date:                Thu, 02 Oct 2025   Prob (F-statistic):           1.09e-15
+Time:                        10:42:37   Log-Likelihood:                -325.63
+No. Observations:                 283   AIC:                             673.3
+Df Residuals:                     272   BIC:                             713.4
+Df Model:                          10                                         
+Covariance Type:              cluster                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept       16.7736      1.412     11.880      0.000      13.818      19.729
+age_centered    -0.1182      0.009    -13.168      0.000      -0.137      -0.099
+age_sq          -0.0106      0.002     -6.212      0.000      -0.014      -0.007
+Height          -1.2132      0.710     -1.708      0.104      -2.700       0.274
+fb_PPM           0.0981      0.112      0.873      0.393      -0.137       0.333
+fb_xGpm          0.0204      0.020      1.014      0.323      -0.022       0.062
+fb_MnMP          0.0078      0.003      3.036      0.007       0.002       0.013
+Dum_DEF         -0.1911      0.254     -0.751      0.462      -0.723       0.341
+Dum_MC           0.0141      0.260      0.054      0.957      -0.530       0.558
+Dum_ATA          0.1518      0.247      0.615      0.546      -0.365       0.668
+neglog_rank      0.2916      0.136      2.136      0.046       0.006       0.577
+==============================================================================
+Omnibus:                        6.653   Durbin-Watson:                   1.566
+Prob(Omnibus):                  0.036   Jarque-Bera (JB):                6.383
+Skew:                          -0.321   Prob(JB):                       0.0411
+Kurtosis:                       2.641   Cond. No.                     2.52e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 2.52e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

@@ -1,0 +1,6 @@
+Tratamento: age_centered e age_sq criados (média age=28.9823).
+Dependente: ln_Value_Num já existe e será usado.
+Desempenho (minutos): usando coluna 'fb_Mn/MP' como fb_MnMP.
+Desempenho (xG): usando coluna 'fb_xG+/-' como fb_xGpm.
+Decisão: Height e fb_PPM excluídos da especificação do modelo.
+Aviso: Modelo_GK com N=14 (N pequeno).

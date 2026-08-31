@@ -1,0 +1,1 @@
+B (neglog_rank) aumentou erro vs A (pts_rnc) em CV.

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Dados brutos raspados (Transfermarkt/FBref) - nao redistribuidos, ver docs/data_sources.md.
+# codes/pipeline/ 01-05 consomem estes arquivos; quem clonar o repositorio
+# precisa reobte-los (coleta ao vivo, ver docs/pipeline.md) ou pedir ao autor.
+/dados/clubes/*_2024*.csv
+/dados/clubes/*_2024_table_only.csv
+/dados/selecao/
+/dados/minutes_played/
+/dados/transfers_brazilian_league/
+
+# Documento de terceiros sem autorizacao de redistribuicao (ver docs/divergencias.md)
+/dados/clubes/RNC*.pdf

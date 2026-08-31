@@ -1,0 +1,2 @@
+optimal_k,total_players,features_used,clustering_method,evaluation_metrics
+4,285,"['age', 'Position_Num', 'Height', 'fb_Mn/MP', 'fb_PPM', 'fb_+/-', 'fb_xG+/-', 'Dum_GK', 'Dum_DEF', 'Dum_MC', 'Dum_ATA', 'age2']",K-means + Hierarchical Ward,"['Silhouette', 'Calinski-Harabasz', 'Davies-Bouldin', 'SSE']"

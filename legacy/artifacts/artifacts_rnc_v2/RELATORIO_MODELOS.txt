@@ -1,0 +1,15 @@
+RELATÓRIO CONSOLIDADO DE MODELOS
+
+Modelo principal (Baseline A, HC1 cluster por Clube)
+Especificação: baseline_A
+Coeficientes (HC1 cluster por Clube): coef | se | t | p
+  Intercept: 13.2103 | 0.6744 | 19.5874 | 4.7e-14
+  age_centered: -0.1145 | 0.0104 | -10.9988 | 1.1e-09
+  age_sq: -0.0116 | 0.0015 | -7.8125 | 2.4e-07
+  fb_xGpm: 0.0468 | 0.0163 | 2.8664 | 0.010
+  fb_MnMP: 0.0075 | 0.0030 | 2.5108 | 0.021
+  Dum_DEF: -0.0569 | 0.2175 | -0.2614 | 0.797
+  Dum_MC: 0.1651 | 0.2237 | 0.7383 | 0.469
+  Dum_ATA: 0.3034 | 0.2261 | 1.3419 | 0.195
+  pts_rnc: 0.0001 | 0.0000 | 1.6182 | 0.122
+N=283, R2=0.4136, R2_adj=0.3964

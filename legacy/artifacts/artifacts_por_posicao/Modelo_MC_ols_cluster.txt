@@ -1,0 +1,31 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           ln_Value_Num   R-squared:                       0.241
+Model:                            OLS   Adj. R-squared:                  0.194
+Method:                 Least Squares   F-statistic:                     19.42
+Date:                Mon, 17 Nov 2025   Prob (F-statistic):           7.09e-07
+Time:                        17:21:48   Log-Likelihood:                -105.58
+No. Observations:                  87   AIC:                             223.2
+Df Residuals:                      81   BIC:                             238.0
+Df Model:                           5                                         
+Covariance Type:              cluster                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept       13.6731      0.612     22.359      0.000      12.393      14.953
+age_centered    -0.0924      0.027     -3.471      0.003      -0.148      -0.037
+age_sq          -0.0130      0.002     -5.961      0.000      -0.018      -0.008
+fb_xGpm          0.0364      0.017      2.167      0.043       0.001       0.071
+fb_MnMP          0.0063      0.007      0.872      0.394      -0.009       0.021
+pts_rnc        3.96e-05      4e-05      0.991      0.334    -4.4e-05       0.000
+==============================================================================
+Omnibus:                        4.557   Durbin-Watson:                   1.803
+Prob(Omnibus):                  0.102   Jarque-Bera (JB):                4.264
+Skew:                          -0.542   Prob(JB):                        0.119
+Kurtosis:                       3.012   Cond. No.                     1.00e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large,  1e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.

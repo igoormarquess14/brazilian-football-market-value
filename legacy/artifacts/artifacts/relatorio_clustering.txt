@@ -1,0 +1,488 @@
+================================================================================
+RELATÓRIO DE CLUSTERIZAÇÃO - DADOS DE FUTEBOL
+================================================================================
+
+1. INFORMAÇÕES GERAIS
+----------------------------------------
+Total de jogadores analisados: 285
+Número ótimo de clusters: 4
+Features utilizadas: age, Position_Num, Height, fb_Mn/MP, fb_PPM, fb_+/-, fb_xG+/-, Dum_GK, Dum_DEF, Dum_MC, Dum_ATA, age2
+Método de clusterização: K-means + Hierarchical Ward
+Data de execução: 2025-09-25 11:31:53
+
+2. MÉTRICAS DE AVALIAÇÃO
+----------------------------------------
+Silhouette Score: 0.2941
+Calinski-Harabasz Score: 78.03
+Davies-Bouldin Score: 1.3044
+Sum of Squared Errors (SSE): 1865.76
+
+3. COMPARAÇÃO DE TODOS OS K TESTADOS
+----------------------------------------
+K	Silhouette	Calinski-H	Davies-B	SSE
+------------------------------------------------------------
+2.0	0.2254		71.4		1.8286		2731
+3.0	0.2515		74.2		1.5555		2241
+4.0	0.2941		78.0		1.3044		1866
+5.0	0.2748		72.5		1.2438		1680
+6.0	0.2565		67.9		1.3214		1542
+7.0	0.2412		65.2		1.3408		1420
+8.0	0.2253		63.5		1.4240		1313
+9.0	0.2285		61.9		1.3981		1224
+10.0	0.2345		61.3		1.3256		1138
+11.0	0.2298		58.3		1.3558		1093
+12.0	0.2200		55.9		1.3822		1051
+
+4. DISTRIBUIÇÃO DOS CLUSTERS
+----------------------------------------
+Cluster 0: 92 jogadores (32.3%)
+Cluster 1: 91 jogadores (31.9%)
+Cluster 2: 88 jogadores (30.9%)
+Cluster 3: 14 jogadores (4.9%)
+
+5. PERFIS DETALHADOS DOS CLUSTERS
+----------------------------------------
+
+CLUSTER 0 (92 jogadores)
+==============================
+age:
+  Média: 28.7391
+  Desvio Padrão: 4.4595
+  Mediana: 28.0000
+  Mínimo: 20.0000
+  Máximo: 39.0000
+
+Position_Num:
+  Média: 9.4239
+  Desvio Padrão: 1.2687
+  Mediana: 9.0000
+  Mínimo: 8.0000
+  Máximo: 11.0000
+
+Height:
+  Média: 1.7738
+  Desvio Padrão: 0.0652
+  Mediana: 1.7700
+  Mínimo: 1.6000
+  Máximo: 1.9400
+
+fb_Mn/MP:
+  Média: 48.2935
+  Desvio Padrão: 20.7812
+  Mediana: 50.0000
+  Mínimo: 1.0000
+  Máximo: 85.0000
+
+fb_PPM:
+  Média: 1.3213
+  Desvio Padrão: 0.6255
+  Mediana: 1.3300
+  Mínimo: 0.0000
+  Máximo: 2.5000
+
+fb_+/-:
+  Média: 0.9348
+  Desvio Padrão: 7.0396
+  Mediana: 0.0000
+  Mínimo: -13.0000
+  Máximo: 23.0000
+
+fb_xG+/-:
+  Média: 0.6565
+  Desvio Padrão: 4.3763
+  Mediana: 0.4500
+  Mínimo: -12.2000
+  Máximo: 12.6000
+
+Dum_GK:
+  Média: 0.0000
+  Desvio Padrão: 0.0000
+  Mediana: 0.0000
+  Mínimo: 0.0000
+  Máximo: 0.0000
+
+Dum_DEF:
+  Média: 0.0000
+  Desvio Padrão: 0.0000
+  Mediana: 0.0000
+  Mínimo: 0.0000
+  Máximo: 0.0000
+
+Dum_MC:
+  Média: 0.0000
+  Desvio Padrão: 0.0000
+  Mediana: 0.0000
+  Mínimo: 0.0000
+  Máximo: 0.0000
+
+Dum_ATA:
+  Média: 1.0000
+  Desvio Padrão: 0.0000
+  Mediana: 1.0000
+  Mínimo: 1.0000
+  Máximo: 1.0000
+
+age2:
+  Média: 845.6087
+  Desvio Padrão: 260.1710
+  Mediana: 784.0000
+  Mínimo: 400.0000
+  Máximo: 1521.0000
+
+Jogadores neste cluster:
+Dudu                Bernard             Júnior Santos       Rony                Hulk                
+Erick Pulga         Michel Araújo       Willian José        Matheus Martins     Jeffinho            
+Artur               Nathan Fernandes    Joaquín Correa      Arthur Cabral       Henry Mosquera      
+Lucas Barbosa       Ignacio Laquintana  Isidro Pitta        Thiago Borbas       Eduardo Sasha       
+Fernandinho         Pedro Henrique      Aylon               Vitinho             Ángel Romero        
+Yuri Alberto        Wanderson           Yannick Bolasie     Marquinhos          Kaio Jorge          
+Gabriel Barbosa     Samuel Lino         Michael             Gonzalo Plata       Luiz Araújo         
+Pedro               Juninho             Bruno Henrique      Yeferson Soteldo    Keno                
+Santiago Moreno     Kevin Serna         Germán Cano         Moisés              José Herrera        
+Yago Pikachu        Marinho             Adam Bareiro        Juan Martín Lucero  Deyverson           
+Alexander Aravena   Francis Amuzu       Cristian Olivera    Martin Braithwaite  Giovanny            
+Rafael Bilu         Gabriel Taliari     Matheus Babi        Gilberto            Negueba             
+Carlos Eduardo      Luiz Filipe         Paulinho            Facundo Torres      Felipe Anderson     
+Vitor Roque         Guilherme           Gustavo Caballero   Benjamín Rollheiser Tiquinho Soares     
+Lucas Moura         Luciano             André Silva         Jonathan Calleri    Rodrigo Atencio     
+Chrystian Barletta  Romarinho           Pablo               Jean Meneses        David               
+Loide Augusto       Adson               Pablo Vegetti       Lucas Braga         Osvaldo             
+Romarinho           Renato Kayzer       Renzo López         Ademir              Enner Valencia      
+Rafael Borré        Wesley              
+
+
+CLUSTER 1 (91 jogadores)
+==============================
+age:
+  Média: 29.1319
+  Desvio Padrão: 4.0585
+  Mediana: 29.0000
+  Mínimo: 21.0000
+  Máximo: 40.0000
+
+Position_Num:
+  Média: 3.1868
+  Desvio Padrão: 0.8681
+  Mediana: 3.0000
+  Mínimo: 2.0000
+  Máximo: 5.0000
+
+Height:
+  Média: 1.8100
+  Desvio Padrão: 0.0621
+  Mediana: 1.8100
+  Mínimo: 1.6600
+  Máximo: 1.9400
+
+fb_Mn/MP:
+  Média: 71.6923
+  Desvio Padrão: 19.7730
+  Mediana: 78.0000
+  Mínimo: 1.0000
+  Máximo: 90.0000
+
+fb_PPM:
+  Média: 1.3588
+  Desvio Padrão: 0.6186
+  Mediana: 1.3300
+  Mínimo: 0.0000
+  Máximo: 3.0000
+
+fb_+/-:
+  Média: 0.9231
+  Desvio Padrão: 8.2546
+  Mediana: -1.0000
+  Mínimo: -13.0000
+  Máximo: 31.0000
+
+fb_xG+/-:
+  Média: 0.6451
+  Desvio Padrão: 4.8164
+  Mediana: 0.1000
+  Mínimo: -12.8000
+  Máximo: 14.1000
+
+Dum_GK:
+  Média: 0.0000
+  Desvio Padrão: 0.0000
+  Mediana: 0.0000
+  Mínimo: 0.0000
+  Máximo: 0.0000
+
+Dum_DEF:
+  Média: 1.0000
+  Desvio Padrão: 0.0000
+  Mediana: 1.0000
+  Mínimo: 1.0000
+  Máximo: 1.0000
+
+Dum_MC:
+  Média: 0.0000
+  Desvio Padrão: 0.0000
+  Mediana: 0.0000
+  Mínimo: 0.0000
+  Máximo: 0.0000
+
+Dum_ATA:
+  Média: 0.0000
+  Desvio Padrão: 0.0000
+  Mediana: 0.0000
+  Mínimo: 0.0000
+  Máximo: 0.0000
+
+age2:
+  Média: 864.9560
+  Desvio Padrão: 240.7160
+  Mediana: 841.0000
+  Mínimo: 441.0000
+  Máximo: 1600.0000
+
+Jogadores neste cluster:
+Lyanco              Júnior Alonso       Guilherme Arana     Natanael            Renzo Saravia       
+Santiago Ramos MingoKanu                David Duarte        Luciano Juba        Iago                
+Gilberto            Santiago Arias      Alexander Barboza   Cuiabano            Alex Telles         
+Vitinho             Mateo Ponte         Pedro Henrique      Juninho Capixaba    Vanderlan           
+Agustín Sant'Anna   Nathan Mendes       Willian Machado     Éder                Rafael Ramos        
+André Ramalho       Gustavo Henrique    Matheus Bidu        Hugo                Fabrizio Angileri   
+Matheuzinho         Lucas Villalba      Léo Ortiz           Léo Pereira         Danilo              
+Ayrton Lucas        Alex Sandro         Guillermo Varela    Thiago Silva        Manoel              
+Gabriel Fuentes     Guga                Samuel Xavier       Benjamín Kuscevic   Weverson            
+Diogo Barbosa       Bruno Pacheco       Eros Mancuso        Rodrigo Ely         Fabián Balbuena     
+Jemerson            Walter Kannemann    Lucas Esteves       João Pedro          Marcos Rocha        
+Wilker Ángel        Alan Ruschel        Reginaldo           João Victor         Reinaldo            
+Lucas Ramon         Daniel Borges       Micael              Joaquín Piquerez    Jefté               
+Khellven            Gil                 Gonzalo Escobar     Mayke               Alan Franco         
+Nahuel Ferraresi    Robert Arboleda     Wendell             João Silva          Rafael Thyere       
+Matheus Alexandre   Mauricio Lemos      Lucas Oliveira      Lucas Freitas       Lucas Piton         
+Victor Luís         Paulo Henrique      Zé Marcos           Claudinho           Alexandro Bernabei  
+Braian Aguirre      Clayton             Gabriel Mercado     Juninho             Ronaldo             
+Thiago Maia         
+
+
+CLUSTER 2 (88 jogadores)
+==============================
+age:
+  Média: 28.3636
+  Desvio Padrão: 4.1831
+  Mediana: 28.5000
+  Mínimo: 18.0000
+  Máximo: 36.0000
+
+Position_Num:
+  Média: 5.9205
+  Desvio Padrão: 0.9125
+  Mediana: 6.0000
+  Mínimo: 5.0000
+  Máximo: 8.0000
+
+Height:
+  Média: 1.7722
+  Desvio Padrão: 0.0541
+  Mediana: 1.7700
+  Mínimo: 1.6000
+  Máximo: 1.8800
+
+fb_Mn/MP:
+  Média: 57.7159
+  Desvio Padrão: 20.0419
+  Mediana: 58.5000
+  Mínimo: 4.0000
+  Máximo: 90.0000
+
+fb_PPM:
+  Média: 1.4108
+  Desvio Padrão: 0.6482
+  Mediana: 1.4350
+  Mínimo: 0.0000
+  Máximo: 3.0000
+
+fb_+/-:
+  Média: 1.2727
+  Desvio Padrão: 7.2678
+  Mediana: 0.0000
+  Mínimo: -21.0000
+  Máximo: 29.0000
+
+fb_xG+/-:
+  Média: 0.8477
+  Desvio Padrão: 4.6814
+  Mediana: 0.2500
+  Mínimo: -17.1000
+  Máximo: 14.5000
+
+Dum_GK:
+  Média: 0.0000
+  Desvio Padrão: 0.0000
+  Mediana: 0.0000
+  Mínimo: 0.0000
+  Máximo: 0.0000
+
+Dum_DEF:
+  Média: 0.0000
+  Desvio Padrão: 0.0000
+  Mediana: 0.0000
+  Mínimo: 0.0000
+  Máximo: 0.0000
+
+Dum_MC:
+  Média: 1.0000
+  Desvio Padrão: 0.0000
+  Mediana: 1.0000
+  Mínimo: 1.0000
+  Máximo: 1.0000
+
+Dum_ATA:
+  Média: 0.0000
+  Desvio Padrão: 0.0000
+  Mediana: 0.0000
+  Mínimo: 0.0000
+  Máximo: 0.0000
+
+age2:
+  Média: 821.7955
+  Desvio Padrão: 233.8214
+  Mediana: 812.5000
+  Mínimo: 324.0000
+  Máximo: 1296.0000
+
+Jogadores neste cluster:
+Alexsander          Fausto Vera         Gabriel Menino      Alan Franco         Gustavo Scarpa      
+Igor Gomes          Reinier             Caio Alexandre      Erick               Nicolás Acevedo     
+Jean Lucas          Everton Ribeiro     Danilo              Marlon Freitas      Allan               
+Newton              Jefferson Savarino  Álvaro Montoro      Jordan Barrera      Kauan Lindes        
+Fabinho             Matheus Fernandes   Gabriel             Eric Ramires        Richardson          
+Lucas Lima          Matheus Araújo      Lucas Mugni         Raniele             André Carrillo      
+Rodrigo Garro       Walace              Lucas Romero        Lucas Silva         Christian           
+Matheus Henrique    Matheus Pereira     Jorginho            Erick Pulgar        Allan               
+Nicolás de la Cruz  Giorgian de ArrascaetaJorge Carrascal     Facundo Bernal      Luciano Acosta      
+Lima                Ganso               Lucas Sasha         Rodrigo Santos      Matheus Rossetto    
+Pablo Roberto       Kervin Andrade      Gustavo Cuéllar     Camilo              Dodi                
+Edenilson           Franco Cristaldo    Miguel Monsalve     Daniel Giraldo      Jádson              
+Lucas Fernandes     Neto Moura          Danielzinho         Aníbal Moreno       Emiliano Martínez   
+Lucas Evangelista   Raphael Veiga       Mauricio            João Schmidt        Zé Rafael           
+Neymar              Thaciano            Damián Bobadilla    Alisson             Oscar               
+Christian Rivera    Lucas Lima          Juan Sforza         Thiago Mendes       Jair                
+Hugo Moura          Philippe Coutinho   Ismael              Ronald              Aitor Cantalapiedra 
+Alan Patrick        Bruno Henrique      Bruno Tabata        
+
+
+CLUSTER 3 (14 jogadores)
+==============================
+age:
+  Média: 32.9286
+  Desvio Padrão: 4.3934
+  Mediana: 34.0000
+  Mínimo: 26.0000
+  Máximo: 40.0000
+
+Position_Num:
+  Média: 1.0000
+  Desvio Padrão: 0.0000
+  Mediana: 1.0000
+  Mínimo: 1.0000
+  Máximo: 1.0000
+
+Height:
+  Média: 1.9100
+  Desvio Padrão: 0.0314
+  Mediana: 1.9000
+  Mínimo: 1.8800
+  Máximo: 1.9900
+
+fb_Mn/MP:
+  Média: 85.8571
+  Desvio Padrão: 11.7530
+  Mediana: 90.0000
+  Mínimo: 46.0000
+  Máximo: 90.0000
+
+fb_PPM:
+  Média: 1.2986
+  Desvio Padrão: 0.7691
+  Mediana: 1.1850
+  Mínimo: 0.0000
+  Máximo: 3.0000
+
+fb_+/-:
+  Média: 2.4286
+  Desvio Padrão: 10.0821
+  Mediana: 0.0000
+  Mínimo: -6.0000
+  Máximo: 35.0000
+
+fb_xG+/-:
+  Média: 1.2643
+  Desvio Padrão: 4.9467
+  Mediana: 0.8000
+  Mínimo: -5.9000
+  Máximo: 16.1000
+
+Dum_GK:
+  Média: 1.0000
+  Desvio Padrão: 0.0000
+  Mediana: 1.0000
+  Mínimo: 1.0000
+  Máximo: 1.0000
+
+Dum_DEF:
+  Média: 0.0000
+  Desvio Padrão: 0.0000
+  Mediana: 0.0000
+  Mínimo: 0.0000
+  Máximo: 0.0000
+
+Dum_MC:
+  Média: 0.0000
+  Desvio Padrão: 0.0000
+  Mediana: 0.0000
+  Mínimo: 0.0000
+  Máximo: 0.0000
+
+Dum_ATA:
+  Média: 0.0000
+  Desvio Padrão: 0.0000
+  Mediana: 0.0000
+  Mínimo: 0.0000
+  Máximo: 0.0000
+
+age2:
+  Média: 1102.2143
+  Desvio Padrão: 285.7851
+  Mediana: 1156.0000
+  Mínimo: 676.0000
+  Máximo: 1600.0000
+
+Jogadores neste cluster:
+Everson             Neto                Fernando Miguel     Hugo Souza          Agustín Rossi       
+Brenno              Helton Leite        Tiago Volpi         Walter              Alex Muralha        
+Marcelo Lomba       Léo Jardim          Daniel Fuzato       Sergio Rochet       
+
+6. ANÁLISE DE ESTABILIDADE
+----------------------------------------
+Teste realizado com 20 seeds diferentes para validar a robustez dos clusters.
+Métricas de estabilidade serão calculadas durante a execução.
+
+7. RECOMENDAÇÕES E INTERPRETAÇÕES
+----------------------------------------
+• O número ótimo de clusters foi determinado por um score composto
+  que combina Silhouette, Calinski-Harabasz e Davies-Bouldin.
+• Clusters com maior Silhouette Score indicam melhor separação.
+• Valores altos de Calinski-Harabasz sugerem clusters bem definidos.
+• Davies-Bouldin baixo indica clusters compactos e bem separados.
+• A análise de estabilidade valida a consistência dos resultados.
+
+8. ARQUIVOS GERADOS
+----------------------------------------
+• df_out.csv: Dataset original com coluna de clusters
+• cluster_profile.csv: Estatísticas descritivas por cluster
+• metrics.csv: Métricas de avaliação para todos os k testados
+• summary.csv: Resumo dos resultados
+• relatorio_clustering.txt: Este relatório detalhado
+• elbow.png: Gráfico do método do cotovelo
+• silhouette.png: Gráficos de todas as métricas
+• dendrogram.png: Dendrograma do clustering hierárquico
+• correlation_heatmap.png: Matriz de correlação das features
+
+================================================================================
+FIM DO RELATÓRIO
+================================================================================

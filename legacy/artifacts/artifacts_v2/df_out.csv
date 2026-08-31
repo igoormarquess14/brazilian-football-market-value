@@ -1,0 +1,286 @@
+Player,Clube,Value_Num,fb_Mn/MP,cluster
+Everson,atletico_mineiro,1200000.0,90.0,1
+Lyanco,atletico_mineiro,6000000.0,90.0,0
+Júnior Alonso,atletico_mineiro,3500000.0,86.0,1
+Guilherme Arana,atletico_mineiro,10000000.0,74.0,0
+Natanael,atletico_mineiro,5000000.0,72.0,0
+Renzo Saravia,atletico_mineiro,2000000.0,30.0,2
+Alexsander,atletico_mineiro,5000000.0,58.0,0
+Fausto Vera,atletico_mineiro,5000000.0,64.0,0
+Gabriel Menino,atletico_mineiro,7000000.0,50.0,0
+Alan Franco,atletico_mineiro,4000000.0,85.0,1
+Gustavo Scarpa,atletico_mineiro,7500000.0,76.0,0
+Igor Gomes,atletico_mineiro,3500000.0,39.0,2
+Reinier,atletico_mineiro,1500000.0,52.0,2
+Dudu,atletico_mineiro,2000000.0,69.0,1
+Bernard,atletico_mineiro,1000000.0,20.0,2
+Júnior Santos,atletico_mineiro,5000000.0,24.0,2
+Rony,atletico_mineiro,6500000.0,81.0,0
+Hulk,atletico_mineiro,1500000.0,81.0,1
+Santiago Ramos Mingo,bahia,6000000.0,90.0,0
+Kanu,bahia,3500000.0,51.0,2
+David Duarte,bahia,1200000.0,89.0,1
+Luciano Juba,bahia,5000000.0,85.0,0
+Iago,bahia,3500000.0,47.0,2
+Gilberto,bahia,2500000.0,79.0,1
+Santiago Arias,bahia,2000000.0,42.0,2
+Caio Alexandre,bahia,6500000.0,74.0,0
+Erick,bahia,4500000.0,52.0,0
+Nicolás Acevedo,bahia,4000000.0,33.0,2
+Jean Lucas,bahia,8000000.0,77.0,0
+Everton Ribeiro,bahia,1500000.0,64.0,1
+Erick Pulga,bahia,6000000.0,74.0,0
+Michel Araújo,bahia,1500000.0,27.0,2
+Willian José,bahia,1800000.0,53.0,2
+Neto,botafogo,1500000.0,90.0,1
+Alexander Barboza,botafogo,5000000.0,89.0,0
+Cuiabano,botafogo,8000000.0,49.0,0
+Alex Telles,botafogo,4000000.0,64.0,0
+Vitinho,botafogo,6000000.0,73.0,0
+Mateo Ponte,botafogo,2000000.0,28.0,2
+Danilo,botafogo,2800000.0,39.0,2
+Marlon Freitas,botafogo,6000000.0,85.0,0
+Allan,botafogo,2000000.0,47.0,2
+Newton,botafogo,1000000.0,59.0,1
+Jefferson Savarino,botafogo,10000000.0,71.0,0
+Álvaro Montoro,botafogo,3500000.0,70.0,1
+Jordan Barrera,botafogo,1000000.0,4.0,2
+Kauan Lindes,botafogo,400000.0,31.0,2
+Matheus Martins,botafogo,7000000.0,56.0,0
+Jeffinho,botafogo,5000000.0,25.0,2
+Artur,botafogo,8000000.0,77.0,0
+Nathan Fernandes,botafogo,6000000.0,33.0,0
+Joaquín Correa,botafogo,3000000.0,49.0,2
+Arthur Cabral,botafogo,10000000.0,85.0,0
+Pedro Henrique,bragantino,3500000.0,87.0,1
+Juninho Capixaba,bragantino,6000000.0,90.0,0
+Vanderlan,bragantino,3500000.0,84.0,1
+Agustín Sant'Anna,bragantino,3000000.0,41.0,2
+Nathan Mendes,bragantino,1000000.0,54.0,2
+Fabinho,bragantino,5000000.0,33.0,2
+Matheus Fernandes,bragantino,2000000.0,38.0,2
+Gabriel,bragantino,1500000.0,81.0,1
+Eric Ramires,bragantino,4500000.0,63.0,0
+Henry Mosquera,bragantino,2500000.0,48.0,2
+Lucas Barbosa,bragantino,4000000.0,63.0,0
+Ignacio Laquintana,bragantino,1500000.0,39.0,2
+Isidro Pitta,bragantino,6000000.0,44.0,0
+Thiago Borbas,bragantino,5000000.0,21.0,2
+Eduardo Sasha,bragantino,1500000.0,70.0,1
+Fernando Miguel,ceara,100000.0,82.0,1
+Willian Machado,ceara,900000.0,89.0,1
+Éder,ceara,500000.0,90.0,1
+Rafael Ramos,ceara,500000.0,35.0,2
+Richardson,ceara,200000.0,58.0,1
+Lucas Lima,ceara,150000.0,13.0,2
+Matheus Araújo,ceara,2000000.0,27.0,2
+Lucas Mugni,ceara,300000.0,60.0,1
+Fernandinho,ceara,1000000.0,37.0,2
+Pedro Henrique,ceara,600000.0,61.0,1
+Aylon,ceara,300000.0,41.0,2
+Hugo Souza,corinthians,10000000.0,90.0,0
+André Ramalho,corinthians,2000000.0,89.0,1
+Gustavo Henrique,corinthians,800000.0,90.0,1
+Matheus Bidu,corinthians,2000000.0,73.0,1
+Hugo,corinthians,1200000.0,51.0,2
+Fabrizio Angileri,corinthians,700000.0,62.0,1
+Matheuzinho,corinthians,6000000.0,84.0,0
+Raniele,corinthians,4000000.0,69.0,0
+André Carrillo,corinthians,1000000.0,61.0,1
+Rodrigo Garro,corinthians,1400000.0,74.0,1
+Vitinho,corinthians,1500000.0,26.0,2
+Ángel Romero,corinthians,1000000.0,48.0,2
+Yuri Alberto,corinthians,2200000.0,70.0,1
+Lucas Villalba,cruzeiro,1800000.0,89.0,1
+Walace,cruzeiro,4500000.0,23.0,2
+Lucas Romero,cruzeiro,2800000.0,85.0,1
+Lucas Silva,cruzeiro,700000.0,80.0,1
+Christian,cruzeiro,8000000.0,78.0,0
+Matheus Henrique,cruzeiro,6000000.0,36.0,0
+Matheus Pereira,cruzeiro,1100000.0,78.0,1
+Wanderson,cruzeiro,5000000.0,72.0,0
+Yannick Bolasie,cruzeiro,250000.0,12.0,2
+Marquinhos,cruzeiro,5500000.0,25.0,2
+Kaio Jorge,cruzeiro,7000000.0,79.0,0
+Gabriel Barbosa,cruzeiro,6000000.0,30.0,0
+Agustín Rossi,flamengo,7000000.0,90.0,0
+Léo Ortiz,flamengo,1300000.0,86.0,1
+Léo Pereira,flamengo,8000000.0,87.0,0
+Danilo,flamengo,3500000.0,62.0,1
+Ayrton Lucas,flamengo,7000000.0,50.0,0
+Alex Sandro,flamengo,1800000.0,74.0,1
+Guillermo Varela,flamengo,1200000.0,58.0,1
+Jorginho,flamengo,6000000.0,84.0,0
+Erick Pulgar,flamengo,5000000.0,72.0,0
+Allan,flamengo,4000000.0,46.0,2
+Nicolás de la Cruz,flamengo,1800000.0,58.0,1
+Giorgian de Arrascaeta,flamengo,1500000.0,74.0,1
+Jorge Carrascal,flamengo,7000000.0,26.0,0
+Samuel Lino,flamengo,2200000.0,79.0,1
+Michael,flamengo,6000000.0,44.0,0
+Gonzalo Plata,flamengo,7000000.0,54.0,0
+Luiz Araújo,flamengo,5000000.0,55.0,0
+Pedro,flamengo,2200000.0,50.0,2
+Juninho,flamengo,2500000.0,25.0,2
+Bruno Henrique,flamengo,1000000.0,58.0,1
+Thiago Silva,fluminense,700000.0,85.0,1
+Manoel,fluminense,200000.0,75.0,1
+Gabriel Fuentes,fluminense,2000000.0,87.0,1
+Guga,fluminense,2000000.0,63.0,1
+Samuel Xavier,fluminense,300000.0,82.0,1
+Facundo Bernal,fluminense,2000000.0,65.0,1
+Luciano Acosta,fluminense,6000000.0,83.0,0
+Lima,fluminense,2500000.0,49.0,2
+Ganso,fluminense,400000.0,44.0,2
+Yeferson Soteldo,fluminense,6000000.0,40.0,0
+Keno,fluminense,500000.0,35.0,2
+Santiago Moreno,fluminense,3500000.0,7.0,2
+Kevin Serna,fluminense,2000000.0,50.0,2
+Germán Cano,fluminense,800000.0,73.0,1
+Brenno,fortaleza,1000000.0,90.0,1
+Helton Leite,fortaleza,600000.0,90.0,1
+Benjamín Kuscevic,fortaleza,2000000.0,89.0,1
+Weverson,fortaleza,1500000.0,66.0,1
+Diogo Barbosa,fortaleza,350000.0,65.0,1
+Bruno Pacheco,fortaleza,300000.0,81.0,1
+Eros Mancuso,fortaleza,4000000.0,66.0,0
+Lucas Sasha,fortaleza,250000.0,83.0,1
+Rodrigo Santos,fortaleza,0.0,13.0,2
+Matheus Rossetto,fortaleza,1500000.0,64.0,1
+Pablo Roberto,fortaleza,800000.0,45.0,2
+Kervin Andrade,fortaleza,1500000.0,23.0,2
+Moisés,fortaleza,3000000.0,47.0,2
+José Herrera,fortaleza,2500000.0,44.0,2
+Yago Pikachu,fortaleza,1000000.0,52.0,2
+Marinho,fortaleza,400000.0,50.0,2
+Adam Bareiro,fortaleza,4000000.0,23.0,2
+Juan Martín Lucero,fortaleza,1200000.0,54.0,2
+Deyverson,fortaleza,500000.0,47.0,2
+Tiago Volpi,gremio,1000000.0,90.0,1
+Rodrigo Ely,gremio,2000000.0,20.0,2
+Fabián Balbuena,gremio,2000000.0,75.0,1
+Jemerson,gremio,1000000.0,86.0,1
+Walter Kannemann,gremio,600000.0,87.0,1
+Lucas Esteves,gremio,1800000.0,85.0,1
+João Pedro,gremio,3000000.0,64.0,1
+Marcos Rocha,gremio,300000.0,90.0,1
+Gustavo Cuéllar,gremio,2500000.0,62.0,1
+Camilo,gremio,1200000.0,51.0,2
+Dodi,gremio,700000.0,78.0,1
+Edenilson,gremio,600000.0,52.0,2
+Franco Cristaldo,gremio,7000000.0,51.0,0
+Miguel Monsalve,gremio,6000000.0,37.0,0
+Alexander Aravena,gremio,6000000.0,26.0,2
+Francis Amuzu,gremio,4000000.0,45.0,2
+Cristian Olivera,gremio,6000000.0,75.0,0
+Martin Braithwaite,gremio,2700000.0,84.0,1
+Wilker Ángel,juventude,200000.0,81.0,1
+Alan Ruschel,juventude,150000.0,64.0,1
+Reginaldo,juventude,200000.0,66.0,1
+Daniel Giraldo,juventude,450000.0,51.0,2
+Jádson,juventude,1000000.0,90.0,1
+Lucas Fernandes,juventude,1500000.0,70.0,1
+Giovanny,juventude,700000.0,36.0,2
+Rafael Bilu,juventude,0.0,20.0,2
+Gabriel Taliari,juventude,900000.0,61.0,1
+Matheus Babi,juventude,400000.0,19.0,2
+Gilberto,juventude,300000.0,52.0,2
+Walter,mirassol,200000.0,90.0,1
+Alex Muralha,mirassol,175000.0,90.0,1
+João Victor,mirassol,500000.0,90.0,1
+Reinaldo,mirassol,400000.0,86.0,1
+Lucas Ramon,mirassol,400000.0,84.0,1
+Daniel Borges,mirassol,350000.0,45.0,2
+Neto Moura,mirassol,900000.0,74.0,1
+Danielzinho,mirassol,900000.0,89.0,1
+Negueba,mirassol,900000.0,58.0,1
+Carlos Eduardo,mirassol,500000.0,24.0,2
+Luiz Filipe,mirassol,100000.0,14.0,2
+Marcelo Lomba,palmeiras,150000.0,90.0,1
+Micael,palmeiras,5000000.0,90.0,0
+Joaquín Piquerez,palmeiras,1400000.0,84.0,1
+Jefté,palmeiras,4000000.0,1.0,2
+Khellven,palmeiras,5000000.0,55.0,0
+Aníbal Moreno,palmeiras,1100000.0,58.0,1
+Emiliano Martínez,palmeiras,7000000.0,57.0,0
+Lucas Evangelista,palmeiras,3500000.0,57.0,2
+Raphael Veiga,palmeiras,1500000.0,36.0,2
+Mauricio,palmeiras,1100000.0,49.0,2
+Paulinho,palmeiras,1600000.0,32.0,2
+Facundo Torres,palmeiras,1400000.0,67.0,1
+Felipe Anderson,palmeiras,4000000.0,56.0,0
+Vitor Roque,palmeiras,2000000.0,58.0,1
+Gil,santos,200000.0,90.0,1
+Gonzalo Escobar,santos,1000000.0,71.0,1
+Mayke,santos,2500000.0,75.0,1
+João Schmidt,santos,1000000.0,68.0,1
+Zé Rafael,santos,3000000.0,58.0,1
+Neymar,santos,1200000.0,74.0,1
+Thaciano,santos,1500000.0,32.0,2
+Guilherme,santos,3000000.0,80.0,1
+Gustavo Caballero,santos,600000.0,35.0,2
+Benjamín Rollheiser,santos,8000000.0,71.0,0
+Tiquinho Soares,santos,1500000.0,62.0,1
+Alan Franco,spfc,4500000.0,81.0,0
+Nahuel Ferraresi,spfc,3000000.0,77.0,1
+Robert Arboleda,spfc,800000.0,90.0,1
+Wendell,spfc,3500000.0,56.0,2
+Damián Bobadilla,spfc,2500000.0,62.0,1
+Alisson,spfc,1800000.0,79.0,1
+Oscar,spfc,3500000.0,58.0,2
+Lucas Moura,spfc,4000000.0,28.0,2
+Luciano,spfc,2000000.0,63.0,1
+André Silva,spfc,5000000.0,68.0,0
+Jonathan Calleri,spfc,2500000.0,40.0,2
+João Silva,sport,1500000.0,72.0,1
+Rafael Thyere,sport,400000.0,90.0,1
+Matheus Alexandre,sport,1500000.0,75.0,1
+Christian Rivera,sport,3000000.0,81.0,1
+Lucas Lima,sport,500000.0,79.0,1
+Rodrigo Atencio,sport,3000000.0,31.0,2
+Chrystian Barletta,sport,1700000.0,60.0,1
+Romarinho,sport,1000000.0,17.0,2
+Pablo,sport,600000.0,61.0,1
+Léo Jardim,vasco,7000000.0,90.0,0
+Daniel Fuzato,vasco,900000.0,46.0,2
+Mauricio Lemos,vasco,2500000.0,61.0,1
+Lucas Oliveira,vasco,1400000.0,16.0,2
+Lucas Freitas,vasco,1000000.0,78.0,1
+Lucas Piton,vasco,8000000.0,90.0,0
+Victor Luís,vasco,450000.0,32.0,2
+Paulo Henrique,vasco,2500000.0,88.0,1
+Juan Sforza,vasco,3000000.0,36.0,2
+Thiago Mendes,vasco,3000000.0,33.0,2
+Jair,vasco,2500000.0,53.0,2
+Hugo Moura,vasco,1800000.0,80.0,1
+Philippe Coutinho,vasco,4500000.0,78.0,0
+Jean Meneses,vasco,2000000.0,1.0,2
+David,vasco,1500000.0,50.0,2
+Loide Augusto,vasco,1200000.0,19.0,2
+Adson,vasco,3000000.0,21.0,2
+Pablo Vegetti,vasco,750000.0,81.0,1
+Zé Marcos,vitoria,900000.0,87.0,1
+Claudinho,vitoria,2000000.0,72.0,1
+Ismael,vitoria,1500000.0,18.0,2
+Ronald,vitoria,700000.0,68.0,1
+Aitor Cantalapiedra,vitoria,1800000.0,52.0,2
+Lucas Braga,vitoria,900000.0,60.0,1
+Osvaldo,vitoria,150000.0,45.0,2
+Romarinho,vitoria,1500000.0,70.0,1
+Renato Kayzer,vitoria,1000000.0,77.0,1
+Renzo López,vitoria,800000.0,17.0,2
+Ademir,bahia,1500000.0,64.0,1
+Alan Patrick,internacional,3000000.0,83.0,1
+Alexandro Bernabei,internacional,7000000.0,85.0,0
+Braian Aguirre,internacional,2500000.0,84.0,1
+Bruno Henrique,internacional,400000.0,60.0,1
+Bruno Tabata,internacional,2000000.0,49.0,2
+Clayton,internacional,1000000.0,80.0,1
+Enner Valencia,internacional,1700000.0,46.0,2
+Gabriel Mercado,internacional,200000.0,90.0,1
+Juninho,internacional,800000.0,90.0,1
+Rafael Borré,internacional,7000000.0,53.0,0
+Ronaldo,internacional,1000000.0,62.0,1
+Sergio Rochet,internacional,3500000.0,84.0,1
+Thiago Maia,internacional,5000000.0,57.0,0
+Wesley,internacional,9000000.0,69.0,0
