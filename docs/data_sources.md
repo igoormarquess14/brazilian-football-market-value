@@ -11,7 +11,7 @@ having to re-collect anything.
 ## What is not in the repository
 
 The raw dumps scraped directly from Transfermarkt and FBref **are not
-version-controlled** (`.gitignore`): `dados/clubes/*_2024*.csv`, `dados/selecao/`,
+version-controlled** (`.gitignore`): `dados/clubes/*_20??*.csv`, `dados/selecao/`,
 `dados/minutes_played/`, `dados/transfers_brazilian_league/`. They remain on
 the local disk of anyone cloning from this environment, but do not get
 pushed to GitHub.
