@@ -17,8 +17,8 @@ def processar_ex_club():
     """
 
     # File path
-    arquivo_entrada = str(PROJECT_ROOT / "dados" / "clubes" / "outcome" / "todos_clubes_2024_processado.csv")
-    arquivo_saida = str(PROJECT_ROOT / "dados" / "clubes" / "outcome" / "todos_clubes_2024_final.csv")
+    arquivo_entrada = str(PROJECT_ROOT / "dados" / "clubes" / "outcome" / "todos_clubes_2025_processado.csv")
+    arquivo_saida = str(PROJECT_ROOT / "dados" / "clubes" / "outcome" / "todos_clubes_2025_final.csv")
 
     print("Loading CSV file...")
     df = pd.read_csv(arquivo_entrada)

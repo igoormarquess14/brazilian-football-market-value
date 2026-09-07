@@ -4,7 +4,7 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-PATH_CLUBES = str(PROJECT_ROOT / "dados" / "clubes" / "outcome" / "todos_clubes_2024_final.csv")
+PATH_CLUBES = str(PROJECT_ROOT / "dados" / "clubes" / "outcome" / "todos_clubes_2025_final.csv")
 PATH_FBREF = str(PROJECT_ROOT / "dados" / "minutes_played" / "fbref_playing_time_cleaned.csv")
 OUT_PATH = str(PROJECT_ROOT / "dados" / "clubes" / "outcome" / "atletas_fbref_merged.csv")
 
@@ -15,7 +15,7 @@ fb = pd.read_csv(PATH_FBREF, sep=";", encoding="utf-8")
 # Ensure required columns
 for col in ["Player", "Clube", "age"]:
     if col not in cl.columns:
-        raise KeyError(f"Missing column '{col}' in todos_clubes_2024_final.csv")
+        raise KeyError(f"Missing column '{col}' in todos_clubes_2025_final.csv")
 for col in ["Player", "Squad", "Age"]:
     if col not in fb.columns:
         raise KeyError(f"Missing column '{col}' in fbref_playing_time_cleaned.csv")

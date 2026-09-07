@@ -29,9 +29,9 @@ and `dados/transfers_brazilian_league/`.
 
 | Script | Input | Output | Status |
 |---|---|---|---|
-| `01_merge_clubes.py` | `dados/clubes/*.csv` (18 files) | `dados/clubes/outcome/todos_clubes_2024.csv` | **Verified** — the 01→02→03 chain reproduces `todos_clubes_2024_final.csv` byte for byte |
-| `02_processar_clubes.py` | output of 01 | `.../todos_clubes_2024_processado.csv` | **Verified** (together with 01/03) |
-| `03_processar_ex_club.py` | output of 02 | `.../todos_clubes_2024_final.csv` | **Verified** |
+| `01_merge_clubes.py` | `dados/clubes/*.csv` (18 files) | `dados/clubes/outcome/todos_clubes_2025.csv` | **Verified** — the 01→02→03 chain reproduces `todos_clubes_2025_final.csv` byte for byte |
+| `02_processar_clubes.py` | output of 01 | `.../todos_clubes_2025_processado.csv` | **Verified** (together with 01/03) |
+| `03_processar_ex_club.py` | output of 02 | `.../todos_clubes_2025_final.csv` | **Verified** |
 | `04_clean_fbref_minutes.py` | `dados/minutes_played/fbref_playing_time.csv` + `.../atletas_completo.csv` | `.../fbref_playing_time_cleaned.csv` | **Blocked** — `atletas_completo.csv` does not exist in the repository (no script produces that exact name; likely a manual copy of a variant already lost). The output already exists, committed, and is used by the following scripts. |
 | `05_merge_atletas_fbref.py` | output of 03 + `fbref_playing_time_cleaned.csv` | `.../atletas_fbref_merged.csv` | Run — reproduces the existing file almost exactly (1 row diverges; not investigated further, no effect on the final model) |
 | `06_normalize_and_merge.py` | `.../antijoin_only_clubes_fbref.csv` + output of 05 | `.../final_merged_players.csv` (= `final_merged_clean.csv`) | **Verified**, byte for byte |

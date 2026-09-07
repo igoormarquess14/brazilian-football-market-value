@@ -159,9 +159,9 @@ def scrape_squad_table(club_url: str) -> pd.DataFrame:
     return pd.DataFrame(data)
 
 if __name__ == "__main__":
-    url = "https://www.transfermarkt.com.br/cr-flamengo/kader/verein/614/saison_id/2024/plus/1"
+    url = "https://www.transfermarkt.com.br/cr-flamengo/kader/verein/614/saison_id/2025/plus/1"
     df = scrape_squad_table(url)
     print(df.head(10))
-    out = "flamengo_2024_table_only.csv"
+    out = "flamengo_2025_table_only.csv"
     df.to_csv(out, index=False, encoding="utf-8-sig")
     print(f"CSV salvo em: {os.path.abspath(out)}")

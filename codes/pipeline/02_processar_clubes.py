@@ -19,8 +19,8 @@ def processar_csv_clubes():
     """
 
     # File path
-    arquivo_entrada = str(PROJECT_ROOT / "dados" / "clubes" / "outcome" / "todos_clubes_2024.csv")
-    arquivo_saida = str(PROJECT_ROOT / "dados" / "clubes" / "outcome" / "todos_clubes_2024_processado.csv")
+    arquivo_entrada = str(PROJECT_ROOT / "dados" / "clubes" / "outcome" / "todos_clubes_2025.csv")
+    arquivo_saida = str(PROJECT_ROOT / "dados" / "clubes" / "outcome" / "todos_clubes_2025_processado.csv")
 
     print("Loading CSV file...")
     df = pd.read_csv(arquivo_entrada)
