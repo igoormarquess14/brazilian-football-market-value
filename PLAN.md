@@ -41,7 +41,7 @@ to hold.
 **Deliverable:** `codes/pipeline/` with a numbered chain `01` through `15`, each script using `PROJECT_ROOT`/`pathlib` (no absolute path). Full link-by-link documentation in `docs/pipeline.md`. Scripts outside the final chain moved to `legacy/` (`dedup_attempts/`, `clustering/`, `modelagem_exploratoria/`, `artifacts/`), with the reason recorded in the commit — none deleted. Scraping isolated in `codes/scraping/` (frozen, documented as likely broken).
 
 **Real verification (run, not just statically analyzed):**
-- Scripts `01→02→03` (club merge): the chain reproduces `todos_clubes_2024_final.csv` byte for byte.
+- Scripts `01→02→03` (club merge): the chain reproduces `todos_clubes_2025_final.csv` byte for byte.
 - `06`, `07`, `08`, `09`, `09b`: each reproduces its existing output file byte for byte (or idempotently, for `08`/`09b`).
 - `11` (new, reconstructed in this session): reproduces `dados/df_ata.csv`, `df_def.csv`, `df_gk.csv` byte for byte against the never-corrupted 2025-10-16 originals, and reproduces `dados/df_mc.csv` identical to Step 2's manual fix — the data fix is now embedded in the chain, no longer an isolated patch.
 - `13` (model): reproduced against Table 7/Appendix A, same result as Step 2.
@@ -75,5 +75,5 @@ The user reviewed the single squashed commit and requested three corrections, al
 
 Git history was squashed into a single commit (twice, after the review round) using an orphan branch plus `git reflog expire` + `git gc --prune=now`, so the old commits containing raw data and the RNC PDF are not reachable, even as loose objects. Verified with `git rev-list --objects --all`.
 
-## Step 8 — GitHub push — in progress
-`git init` was done on 2026-08-31 as a safety net before Step 4's reorganization, with identity configured by the user. The original target repository, `transfermkt_scraper`, was deleted by the user (a "scraper" name undersold what the project became). A new repository will be created; coordinates (name/URL) are pending from the user. No `git push` happens automatically, ever — always with explicit authorization for that specific push.
+## Step 8 — GitHub push — ✅ DONE
+`git init` was done on 2026-08-31 as a safety net before Step 4's reorganization, with identity configured by the user. The original target repository, `transfermkt_scraper`, was deleted by the user (a "scraper" name undersold what the project became). New repository created at `github.com/igoormarquess14/brazilian-football-market-value`; the single squashed commit is pushed and `master` is up to date with `origin/master`.

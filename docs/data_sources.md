@@ -37,6 +37,14 @@ structure at the time — since those pages change frequently, the scripts
 likely no longer run without adjustment. Re-obtaining the data requires a
 new manual scrape or adapting these scripts to the pages' current structure.
 
+**Note on the `_2024` suffix:** local raw dumps in `dados/clubes/` may still be
+named with a `_2024` suffix (e.g. `flamengo_2024_table_only.csv`). This is a
+leftover naming convention from the first collection attempt, not an
+indication of season — the sample is the 2025 Brazilian Série A, collected in
+August 2025 (see table above). `codes/pipeline/01_merge_clubes.py` derives the
+club name from these filenames with a regex that accepts any 4-digit year
+suffix, so it works regardless of which literal year tag the local files carry.
+
 ## Excluded third-party document
 
 `dados/clubes/RNC - Ranking Nacional dos Clubes 2025.pdf` (a national club

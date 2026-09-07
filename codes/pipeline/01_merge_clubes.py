@@ -4,6 +4,7 @@ from pathlib import Path
 import pandas as pd
 import os
 import glob
+import re
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
@@ -27,7 +28,9 @@ def juntar_csvs_clubes():
     for arquivo in arquivos_csv:
         # Extract the club name from the file name
         nome_arquivo = os.path.basename(arquivo)
-        nome_clube = nome_arquivo.replace("_2024.csv", "").replace("_2024_table_only.csv", "")
+        # Local raw dumps may still be named with the legacy "_2024" suffix
+        # (see docs/data_sources.md); the sample itself is Série A 2025.
+        nome_clube = re.sub(r"_\d{4}(_table_only)?\.csv$", "", nome_arquivo)
 
         print(f"Processing: {nome_arquivo} -> Club: {nome_clube}")
 
@@ -59,7 +62,7 @@ def juntar_csvs_clubes():
     # Save the final file
     pasta_saida = PROJECT_ROOT / "dados" / "clubes" / "outcome"
     pasta_saida.mkdir(parents=True, exist_ok=True)
-    arquivo_saida = str(pasta_saida / "todos_clubes_2024.csv")
+    arquivo_saida = str(pasta_saida / "todos_clubes_2025.csv")
     df_final.to_csv(arquivo_saida, index=False, encoding='utf-8')
 
     print(f"\nFinal file saved as: {arquivo_saida}")
