@@ -10,5 +10,5 @@ __pycache__/
 /dados/minutes_played/
 /dados/transfers_brazilian_league/
 
-# Documento de terceiros sem autorizacao de redistribuicao (ver docs/divergencias.md)
+# Documento de terceiros sem autorizacao de redistribuicao (ver docs/divergences.md)
 /dados/clubes/RNC*.pdf
