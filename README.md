@@ -64,9 +64,7 @@ See `PLAN.md` for the full roadmap and `docs/pipeline.md` for the link-by-link d
 
 ## Data and sources
 
-Data collected from [Transfermarkt](https://www.transfermarkt.com/) (market values) and [FBref](https://fbref.com/) (playing performance), covering the 2025 Brazilian Série A men's championship through matchday 20. These platforms do not license free redistribution of scraped data, so the raw dumps (`dados/clubes/*_20??*.csv` — local filenames may carry a `_2024` suffix, a leftover naming convention from the first collection attempt, not the season — plus `dados/selecao/`, `dados/minutes_played/`, `dados/transfers_brazilian_league/`) are not version-controlled — only the already-processed base (`dados/df_final.csv`, `dados/df_mc.csv`, and derivatives), which is enough to run the model reproduction. Details on origin, collection dates, and how to re-obtain the raw data are in `docs/data_sources.md`.
-
-A third-party report (RNC club ranking) referenced in the pipeline is likewise not redistributed here — see `docs/data_sources.md`.
+Data collected from [Transfermarkt](https://www.transfermarkt.com/) (market values) and [FBref](https://fbref.com/) (playing performance), covering the 2025 Brazilian Série A men's championship through matchday 20. These platforms do not license free redistribution of scraped data, so the raw dumps (`dados/clubes/`, `dados/selecao/`, `dados/minutes_played/`, `dados/transfers_brazilian_league/`) are not version-controlled, only the already-processed base (`dados/df_final.csv`, `dados/df_mc.csv`, and derivatives), which is enough to run the model reproduction. Details on origin, collection dates, and how to re-obtain the raw data are in `docs/data_sources.md`.
 
 ## Language note
 
