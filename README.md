@@ -1,79 +1,67 @@
-# Determinants of market value in Brazilian football
+# Market value of midfielders in the 2025 Brazilian Série A
 
-Python reproduction of the econometric model from my undergraduate thesis (Economics, UFSC), on the determinants of market value for midfielders in the 2025 Brazilian Série A.
+Python reproduction of the econometric model in my undergraduate thesis in Economics (UFSC, 2025): a hedonic OLS regression of Transfermarkt market value on age and on-pitch performance for the 87 midfielders of the 2025 Brazilian Série A.
 
-**Thesis (in Portuguese):** [`Monografia_Igor_Huttl.pdf`](./Monografia_Igor_Huttl.pdf) — Igor Hüttl Marques, "Mensuração de determinantes de valor no mercado de transferências do futebol brasileiro: um estudo sobre a valoração dos atletas da posição de meio-campo da Série A do Campeonato Brasileiro Masculino de 2025", UFSC, Florianópolis, 2025.
+The original estimation was done in Gretl. This repository re-estimates it from the processed data and checks every coefficient, standard error and fit statistic against the published table.
 
-## Main result
+![Age-value curve for midfielders](outputs/age_value_curve.png)
 
-Using data from 87 midfielders (final sample, out of 283 players collected in total), a hedonic OLS model estimates:
+## Model and result
 
 ```
-ln(MarketValue) = β0 + β1·CenteredAge + β2·CenteredAge² + β3·xG(+/-) + β4·MnMP + ε
+ln(MarketValue) = β0 + β1·AgeC + β2·AgeC² + β3·xG(+/-) + β4·MinPerMatch + ε
 ```
 
-- **Age** has a non-linear effect: market value rises to an estimated peak at **~25 years** and then declines — one year above the average age costs about 10.7% of value; one year below, about 6%.
-- **Net expected-goal balance (xG+/-)**: each additional unit is associated with **+4.1%** in market value.
-- **Minutes played per match**: positive effect, but with marginal statistical significance (p=0.21).
-- R² = 0.227; adjusted R² = 0.189; F(4,82) = 6.00 (p<0.001); N = 87.
+`AgeC` is age centered on the midfielder mean (28.4 years). N = 87, classical standard errors.
 
-Diagnostic tests (RESET, White, residual normality, Chow, VIF) show no relevant violation of the classical OLS assumptions — details in Appendix A of the thesis.
+| Variable | Coefficient | SE | p-value |
+|---|---|---|---|
+| Constant | 14.3035 | 0.3368 | <0.001 |
+| AgeC | −0.0875 | 0.0244 | <0.001 |
+| AgeC² | −0.0127 | 0.0046 | 0.007 |
+| xG(+/-) | 0.0406 | 0.0198 | 0.043 |
+| MinPerMatch | 0.0066 | 0.0053 | 0.214 |
 
-## Reproducing the result
+R² = 0.227, adjusted R² = 0.189, F(4, 82) = 6.00 (p < 0.001).
 
-The published model was re-estimated in Python (`pandas` + `statsmodels`) against the final midfielder sample and compared, coefficient by coefficient, with the original Gretl output:
+- **Age.** Value peaks at 24.97 years. The annual rate of change, exp(β1 + 2·β2·AgeC) − 1, is −8.4% at the mean age, −10.7% one year above it and −6.0% one year below it: past the peak, depreciation accelerates with age.
+- **xG(+/-).** One additional unit of net expected-goal balance is associated with about 4.1% higher market value.
+- **Minutes per match.** The point estimate is +0.7% per minute (p = 0.214). The thesis interprets it at a 78% confidence level, a threshold chosen with the advisor; at conventional levels it is not significant.
+
+Diagnostics reported in the thesis (Appendix A): RESET p = 0.19, White p = 0.32, residual normality p = 0.078, Chow p = 0.47, VIF between 1.03 and 1.28.
+
+### What the model does not identify
+
+The coefficients are conditional associations, not causal effects. The specification has four regressors and no controls for club, contract length, nationality or international exposure, all of which the literature links to market value, so the age and xG terms can absorb part of their effect. The dependent variable is a Transfermarkt estimate, not an observed transfer fee. The sample is one league, one half-season and one position.
+
+## Reproduction
 
 ```bash
-python codes/pipeline/13_estimate_mc_baseline_model.py
+pip install -r requirements.txt
+for s in src/0*.py; do python "$s"; done
 ```
 
-The script reads `dados/df_mc.csv`, runs non-robust OLS (same specification as Gretl, without `--robust`), and writes a comparison report to `outputs/mc_baseline_model.txt`. Current result: exact reproduction within the tolerance adopted for this project — largest relative error in a coefficient is 3.8e-06 (tolerance: 1e-4) and in a standard error is 1.8e-06 (tolerance: 1e-3); R², adjusted R², F, and N are identical to the published values.
+`src/03_estimate_midfielder_model.py` writes `outputs/midfielder_model.txt`. Reproduction criteria were fixed before running: identical N, coefficient relative error below 1e-4, standard error relative error below 1e-3, R² equal to the fourth decimal. Result: largest relative error 3.8e-06 for a coefficient and 1.8e-06 for a standard error; N, R², adjusted R² and F identical.
 
-The full pipeline, from raw data to this result, is in `codes/pipeline/` (scripts numbered `01` through `15`) and documented step by step — what was verified and what is a known limitation — in `docs/pipeline.md`.
+Getting there required one data correction: the estimation file had been overwritten a month after the Gretl session, with one cell of xG replaced by the string `"x "`. Details in [`docs/methodology.md`](docs/methodology.md).
 
-Figure 2 of the thesis (the age–value curve) exists in two versions: `outputs/curva_valorizacao_idade.png/svg`, regenerated by `codes/pipeline/15_curva_valorizacao_idade.py` with English axis/legend labels for this repository, and `legacy/artifacts/curva_valorizacao_idade_original.png/svg`, the original Portuguese-labeled chart as it appears in the thesis. Both plot the same coefficients and produce the same 24.97-year peak.
-
-## Repository structure
+## Repository
 
 | Path | Contents |
 |---|---|
-| `Monografia_Igor_Huttl.pdf` | Final thesis, defended and approved (in Portuguese) — the source of truth for all results. |
-| `dados/df_mc.csv` | Final estimation sample (87 midfielders) used in the published model. |
-| `dados/df_final.csv` | Full post-processing base (283 players, all positions), of which `df_mc.csv` is a subset. |
-| `codes/pipeline/` | Numbered, reproducible chain: raw data merge → final base → model → thesis figure. See `docs/pipeline.md`. |
-| `codes/scraping/` | Original collection scripts (Transfermarkt/FBref) — not part of the reproducible chain, likely no longer functional. |
-| `legacy/` | Exploratory work that did not make it into the final defended version (per-position models, clustering, RNC club ranking) and superseded merge/deduplication attempts. Nothing was deleted — see `legacy/README.md`. |
-| `session.inp` | Command log from the Gretl session (2025-10-16) that produced the published result. |
-| `outputs/` | Outputs generated by this repository's scripts (not to be edited by hand). |
-| `docs/pipeline.md` | What each pipeline script does, what was verified in this session, and which links are known limitations (not hidden bugs). |
-| `docs/divergences.md` | Divergences found between the thesis/Gretl and the state of the repository, and how they were resolved. |
-| `docs/data_sources.md` | Data origin and collection dates, what is version-controlled and what isn't, and why. |
-| `PLAN.md` | Work-in-progress roadmap for making the repository complete and navigable. |
-| `CLAUDE.md` | Project rules for AI-assisted work in this repository. |
-| `LICENSE` | MIT — covers the code, not the data. |
+| `thesis/` | Defended thesis (PDF, in Portuguese), original Gretl command log, Figure 2 as printed |
+| `data/` | Processed base: all players (`df_final.csv`, 283), midfielder sample (`df_mc.csv`, 87), other positions, and the checkpoint they are built from |
+| `src/` | Five scripts, run in order: split by position, check full sample, estimate model, LaTeX tables, age curve |
+| `outputs/` | Everything generated by `src/`, never edited by hand |
+| `docs/methodology.md` | Sources, collection dates, data provenance, known gaps |
+| `legacy/` | Exploratory work not in the published result: per-position models, clustering, RNC club ranking, earlier merge attempts |
 
-## Current status and limitations
+## Data
 
-See `PLAN.md` for the full roadmap and `docs/pipeline.md` for the link-by-link detail. As of now:
+Market values from [Transfermarkt](https://www.transfermarkt.com/) and performance data from [FBref](https://fbref.com/), 2025 Série A through matchday 20, collected in August and September 2025. Only the processed base needed to reproduce the result is included, for academic use. It is derived from those sites and is not covered by the MIT license, which applies to the code only. Raw dumps and scrapers are not included; see [`docs/methodology.md`](docs/methodology.md).
 
-- The **published model is reproduced and verified** (section above), as is the entire data chain from the already-collected raw base to the final sample — see `docs/pipeline.md`.
-- Two links in the cleaning chain (column selection and creation of the position dummies) have no surviving script — the resulting files are preserved, but the exact logic was lost before this session. Documented, not simulated.
-- Merging in the RNC club ranking depends on a file that was manually extracted from a PDF and never saved inside the project — recovering it is beyond the scope of this repository.
-- The data-scraping scripts (Transfermarkt, FBref) likely no longer work — site structure changes frequently. The reproducible entry point is the processed base (`dados/df_final.csv`, `dados/df_mc.csv`), not the collection step.
-- Exploratory work that is not part of the published result (per-position models, clustering, club ranking) is isolated in `legacy/`.
+## Citation
 
-## Data and sources
+Hüttl Marques, I. (2025). *Mensuração de determinantes de valor no mercado de transferências do futebol brasileiro: um estudo sobre a valoração dos atletas da posição de meio-campo da Série A do Campeonato Brasileiro Masculino de 2025*. Undergraduate thesis, Universidade Federal de Santa Catarina.
 
-Data collected from [Transfermarkt](https://www.transfermarkt.com/) (market values) and [FBref](https://fbref.com/) (playing performance), covering the 2025 Brazilian Série A men's championship through matchday 20. These platforms do not license free redistribution of scraped data, so the raw dumps (`dados/clubes/`, `dados/selecao/`, `dados/minutes_played/`, `dados/transfers_brazilian_league/`) are not version-controlled, only the already-processed base (`dados/df_final.csv`, `dados/df_mc.csv`, and derivatives), which is enough to run the model reproduction. Details on origin, collection dates, and how to re-obtain the raw data are in `docs/data_sources.md`.
-
-## Language note
-
-This thesis was written and defended in Portuguese (`Monografia_Igor_Huttl.pdf`); the repository's documentation, code comments, and this README are in English.
-
-## License
-
-The code in this repository is under the MIT license (`LICENSE`). The data follows the terms described in `docs/data_sources.md` — it is not covered by the code's license.
-
-## Acknowledgments
-
-Repository organization and reproduction pipeline built with assistance from Claude Code.
+Repository organization and reproduction scripts were built with assistance from Claude Code.

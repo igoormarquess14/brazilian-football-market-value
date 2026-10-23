@@ -1,3 +1,10 @@
+"""
+Exports data/df_mc.csv and data/df_final.csv as LaTeX longtables
+(the thesis appendix tables).
+
+Output: outputs/df_mc.tex, outputs/df_final.tex
+"""
+
 import pandas as pd
 import os
 import sys
@@ -94,8 +101,8 @@ def csv_to_latex(csv_path, output_path, caption, label):
     print(f"Total columns: {len(df.columns)}")
 
 # Paths
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-base_dir = str(PROJECT_ROOT / "dados")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+base_dir = str(PROJECT_ROOT / "data")
 output_dir = str(PROJECT_ROOT / "outputs")
 Path(output_dir).mkdir(exist_ok=True)
 

@@ -13,7 +13,7 @@ Python adjusted R2: 0.188808 | Thesis adjusted R2: 0.188808 | OK
 Python F: 6.004195 | Thesis F: 6.004195
 Python p(F): 0.000274 | Thesis p(F): 0.000274
 
-REPRODUCTION: OK — within CLAUDE.md tolerance
+REPRODUCTION: OK, within tolerance
 
 ==============================================================================
 Full statsmodels output:
@@ -23,8 +23,8 @@ Full statsmodels output:
 Dep. Variable:           ln_Value_Num   R-squared:                       0.227
 Model:                            OLS   Adj. R-squared:                  0.189
 Method:                 Least Squares   F-statistic:                     6.004
-Date:                Mon, 31 Aug 2026   Prob (F-statistic):           0.000274
-Time:                        18:26:17   Log-Likelihood:                -106.40
+Date:                                   Prob (F-statistic):           0.000274
+Time:                                   Log-Likelihood:                -106.40
 No. Observations:                  87   AIC:                             222.8
 Df Residuals:                      82   BIC:                             235.1
 Df Model:                           4                                         

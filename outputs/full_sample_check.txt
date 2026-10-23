@@ -1,0 +1,11 @@
+Checkpoint after Value_Num > 0 filter: 283 rows
+data/df_final.csv: 283 rows
+Rows matched by Player + Clube: 283
+
+DIFFERS: age_centered (max abs diff = 0.0279462)
+DIFFERS: age_sq (max abs diff = 0.616585)
+DIFFERS: pos_rnc (max abs diff = 24)
+DIFFERS: pts_rnc (max abs diff = 19612.3)
+Columns only in df_final.csv: ['dum_inf', 'dum_sup']
+
+See the docstring of this script for why each difference is expected.
